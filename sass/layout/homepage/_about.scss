@@ -1,0 +1,91 @@
+.about {
+   display: flex;
+   background-image: linear-gradient(to right, #f8f8f8 25%, #24487d 25%, #24487d 100%);
+   padding: 8rem 8rem 4rem;
+   justify-content: center;
+
+   &__img {
+      margin-left: 12rem;
+      img {
+         width: 100%;
+      }
+   }
+
+   &__info {
+      display: flex;
+      justify-content: center;
+      color: $color-white;
+   }
+
+   &__links {
+      list-style: none;
+      padding: 1rem 2rem 0rem;
+      flex-basis: 40%;
+
+      & li {
+         border-right: .5rem solid transparent;
+         transition: all .2s;
+
+         &:not(:last-child) {
+            margin-bottom: 1rem;
+         }
+
+         &:hover, &:focus {
+            border-right: .5rem solid $color-white;
+         }
+
+         &:hover a, a:focus {
+            color: $color-white;
+         }
+      }
+   }
+   
+   &__link-item {
+      color: $color-white;
+      text-decoration-line: none;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      font-weight: 400;
+      letter-spacing: 1px;
+      color: $color-primary-light;
+      transition: all .2s;
+
+      &:focus {
+         outline: none;
+      }
+   }
+
+   &__description {
+      padding: 0 4rem;
+
+      & .btn {
+         margin: 3rem 0;
+      }
+   }
+
+   &__sub-heading {
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 1.4rem;
+      margin-top: 3px;
+      color: $color-primary-light;
+
+      &::after {
+         content: '';
+         display: block;
+         margin: 1.5rem 0;
+         width: 12%;
+         height: 2px;
+         background-color: $color-white;
+      }
+   } 
+
+   &__paragraph {
+      margin-top: 4rem;
+      font-size: 1.4rem;
+      width: 70%;
+      line-height: 1.6;
+      color: #d7e0ee;
+      font-weight: 300;
+   }
+}

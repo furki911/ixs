@@ -1,0 +1,59 @@
+.info {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   padding: 8rem 0;
+   margin-top: 60rem; // becoz position of .navigation is absolute 
+
+   &__sub-heading {
+      color: #969696;
+      font-weight: 100;
+      font-size: 1.6rem;
+   }
+
+   &__heading {
+      margin: 1rem 0 3rem;
+
+      &::after {
+         content: '';
+         display: block;
+         margin: 1rem auto;
+         width: 8%;
+         height: 3px;
+         background-color: $color-primary;
+      }
+   }
+
+   &__item-container {
+      display: flex;
+      padding: 0 4rem;
+   }
+
+   &__item {
+
+      margin: 4rem 0;
+
+      &:not(:last-child) {
+         margin-right: 6rem;
+      }
+
+      &-heading {
+         margin: 1.6rem 0;
+      }
+
+      &-logo .fa {
+         font-size: 4rem;
+         background-image: linear-gradient(to right bottom, rgba(#6e1ea6, 0.9), rgba(#266990, 0.9));
+         -webkit-background-clip: text;
+         background-clip: text;
+         color: transparent;
+      }
+      
+      &-description {
+         font-size: 1.4rem;
+         font-weight: 300;
+         color: $color-text;
+      }
+   }
+}

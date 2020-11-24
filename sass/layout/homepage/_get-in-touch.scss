@@ -1,0 +1,17 @@
+.get-in-touch {
+   
+   background: $color-primary-light-1;
+   &__container {
+      display: flex;
+      justify-content: space-between;
+      padding: 8rem 14rem;
+      color: $color-white;
+      align-items: center;
+   }
+
+   &__sub-heading {
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin: .5rem 0;
+   }
+}

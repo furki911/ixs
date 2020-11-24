@@ -1,0 +1,79 @@
+.navigation {
+   background-color: transparent;
+   position: relative;
+
+   &__sub-heading {
+      margin-bottom: 4rem;
+      width: 50%;
+   }
+
+   &__item {
+      width: 100%;
+      height: 85vh;
+      position: absolute;
+      transition: all .5s;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 0 20rem;
+      color: $color-white;
+      transition: all .8s cubic-bezier(.83,.15,.47,.84);
+
+      &::after {
+         content: ""; 
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-image: linear-gradient(to right top, rgba(#6e1ea6, 0.9) 0%, rgba(#6e1ea6, 0.9) 10%, rgba(#266990, 0.9));
+         opacity: .5;
+         z-index: -1;
+      }
+      
+      &-1 {
+         clip-path: polygon(0 0, 55% 0, 20% 100%, 0% 100%);
+         background: url('../img/navigation/test-1.jpg');
+         background-position: center center;
+         background-size: cover;
+         background-repeat: no-repeat;
+      }
+      
+      &-2 {
+         clip-path: polygon(55% 0, 100% 0, 85% 100%, 0 100%);
+         background: url('../img/navigation/foreman-and-businessman-at-solar-energy-station-ZNZJB66.jpg');
+         background-position: center center;
+         background-size: cover;
+         background-repeat: no-repeat;
+      }
+      
+      &-3 {
+         clip-path: polygon(100% 0, 100% 0, 100% 100%, 55% 100%);
+         background: url('../img/navigation/test-3.jpg');
+         background-position: center center;
+         background-size: cover;
+         background-repeat: no-repeat;
+      }
+
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+
+   // When Hovered, image will be fully visible
+   &:hover &__item {
+      clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+   }
+
+   & &__item:hover {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+   }   
+}
+
+.navigation__item:not(:hover).navigation__item > * {
+   // display: none;
+   opacity: 0;
+}
