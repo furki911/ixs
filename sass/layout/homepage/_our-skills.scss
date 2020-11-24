@@ -1,24 +1,79 @@
 .our-skills {
 
    display: flex;
-   
-   &__description {
 
+   & > * {
+      flex-basis: 50%;
+      padding: 8rem;
    }
 
    &__sub-heading {
-
+      font-style: italic;
    }
 
    &__heading {
+      line-height: 1;
+      margin: 2rem 0;
+      text-transform: none;
+      font-weight: 100;
 
+      &::after {
+         content: '';
+         display: block;
+         margin: 2rem 0;
+         width: 20%;
+         height: 3px;
+         background-color: $color-primary;
+      }
    }
 
    &__logos {
+      display: flex;
+      justify-content: center;
 
+      
+      .fa {
+         font-size: 4rem;
+         &:not(:last-child) {
+            margin-right: 2rem;
+         }
+      }
    }
 
-   &__values {
+   &__item {
 
+      margin: 2rem 0;
+
+      &-heading {
+         font-weight: 500;
+      }
+
+      &-top {
+         display: flex;
+         justify-content: space-between;
+         margin-bottom: 1rem;
+      }
+
+      &-percentage {
+         color: $color-text;
+         font-weight: 300;
+      }
+
+      &-bottom {
+         background-color: $color-gray;
+         display: block;
+         width: 100%;
+         height: 1rem;
+         border-radius: 100px;
+         position: relative;
+         overflow: hidden;
+      }
+      
+      &-value {
+         position: absolute;
+         height: 100%;
+         background-image: linear-gradient(to right top, rgba(#6e1ea6, 0.9) 0%, rgba(#6e1ea6, 0.9) 10%, rgba(#266990, 0.9));
+         border-radius: 100px;
+      }
    }
 }
