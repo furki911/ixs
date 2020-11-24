@@ -369,3 +369,5 @@ h6 {
 
 .sub-footer {
   background-image: linear-gradient(to right top, #200036, #042133); }
+  .sub-footer .footer {
+    text-align: center; }
