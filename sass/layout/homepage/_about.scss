@@ -46,7 +46,6 @@
       text-transform: uppercase;
       font-size: 1.2rem;
       font-weight: 400;
-      letter-spacing: 1px;
       color: $color-primary-light;
       transition: all .2s;
 
@@ -82,9 +81,9 @@
 
    &__paragraph {
       margin-top: 4rem;
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       width: 70%;
-      line-height: 1.6;
+      line-height: 1.8;
       color: #d7e0ee;
       font-weight: 300;
    }
