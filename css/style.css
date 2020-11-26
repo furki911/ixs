@@ -480,3 +480,41 @@ h6 {
       -moz-background-clip: text;
       background-clip: text;
       color: transparent; }
+
+.our-work {
+  padding: 8rem 0; }
+  .our-work__sub-heading {
+    text-align: center;
+    margin-bottom: 1.4rem; }
+  .our-work__heading {
+    text-align: center;
+    margin: .6rem 0; }
+    .our-work__heading::after {
+      content: '';
+      display: block;
+      margin: 1.6rem auto;
+      width: 8%;
+      height: 3px;
+      background-color: #365e99; }
+  .our-work__links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    border-bottom: 2px solid #eeeeee;
+    margin-top: 4rem; }
+  .our-work__link {
+    text-transform: uppercase;
+    margin: 2rem 0; }
+    .our-work__link a {
+      text-decoration-line: none;
+      padding: 1rem .75rem;
+      border-bottom: 2px solid transparent;
+      font-size: 1.2rem;
+      color: #6b6b6b;
+      font-weight: 400;
+      transition: all .2s;
+      backface-visibility: none; }
+      .our-work__link a:hover, .our-work__link a.active {
+        border-bottom: 2px solid #4d3699; }
+    .our-work__link:not(:last-child) {
+      margin-right: 4rem; }

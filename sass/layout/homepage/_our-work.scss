@@ -1,0 +1,57 @@
+.our-work {
+   padding: 8rem 0;
+
+   &__sub-heading {
+      text-align: center;
+      margin-bottom: 1.4rem;
+   }
+
+   &__heading {
+      text-align: center;
+      margin: .6rem 0;
+      &::after {
+         content: '';
+         display: block;
+         margin: 1.6rem auto;
+         width: 8%;
+         height: 3px;
+         background-color: $color-primary;
+      }
+   }
+
+   &__links {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      border-bottom: 2px solid $color-gray;
+      margin-top: 4rem;
+   }  
+
+   &__link {
+      text-transform: uppercase;
+      margin: 2rem 0;
+      
+      a {
+         text-decoration-line: none;
+         padding: 1rem .75rem;
+         border-bottom: 2px solid transparent;
+         font-size: 1.2rem;
+         color: $color-text;
+         font-weight: 400;
+         transition: all .2s;
+         backface-visibility: none;
+         
+         &:hover, &.active {
+            border-bottom: 2px solid $color-primary-light-1;
+         }
+      }
+
+      &:not(:last-child) {
+         margin-right: 4rem;
+      }
+   }
+
+   &__grid-container {
+      
+   }
+}
