@@ -27,11 +27,16 @@
       grid-template-columns: repeat(auto-fit, minmax(37rem, 1fr));
       grid-gap: 4rem;
       padding: 4rem 0;
+      min-height: 60vh;
    }
 
    &__item {
       position: relative;
       padding: 1rem 4rem;
+
+      &.delete {
+         display: none;
+      }
 
       &-heading {
          margin-bottom: 2rem;

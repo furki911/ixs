@@ -459,10 +459,13 @@ h6 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(37rem, 1fr));
     grid-gap: 4rem;
-    padding: 4rem 0; }
+    padding: 4rem 0;
+    min-height: 60vh; }
   .what-we-offer__item {
     position: relative;
     padding: 1rem 4rem; }
+    .what-we-offer__item.delete {
+      display: none; }
     .what-we-offer__item-heading {
       margin-bottom: 2rem; }
     .what-we-offer__item-paragraph {
