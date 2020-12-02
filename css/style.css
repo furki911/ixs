@@ -147,7 +147,7 @@ h6 {
   .info__item {
     margin: 4rem 0; }
     .info__item:not(:last-child) {
-      margin-right: 6rem; }
+      margin-right: 10rem; }
     .info__item-heading {
       margin: 1.6rem 0; }
     .info__item-logo .fa {
@@ -159,7 +159,9 @@ h6 {
     .info__item-description {
       font-size: 1.4rem;
       font-weight: 300;
-      color: #6b6b6b; }
+      color: #6b6b6b;
+      text-align: justify;
+      text-justify: inter-word; }
 
 .about {
   display: flex;
@@ -236,27 +238,29 @@ h6 {
     margin: .5rem 0; }
 
 .statistics {
-  background: #24487d;
-  color: #ffffff; }
-  .statistics__container {
+  padding: 5rem; }
+  .statistics__heading {
+    text-align: center; }
+    .statistics__heading::after {
+      content: '';
+      display: block;
+      margin: 1rem auto;
+      width: 6%;
+      height: 3px;
+      background-color: #365e99; }
+  .statistics__sub-heading {
+    margin: 4rem 0 1rem;
+    text-align: center; }
+  .statistics__brand-container {
     display: flex;
     justify-content: center;
-    padding: 8rem; }
-  .statistics__item {
-    display: flex; }
-    .statistics__item:not(:last-child) {
-      margin-right: 6rem; }
-  .statistics__logo {
-    margin-right: 2.2rem;
-    margin-top: 1rem; }
-    .statistics__logo .fa {
-      font-size: 3rem;
-      font-weight: 100;
-      transform: translateY(3px); }
-  .statistics__heading {
-    font-weight: 400; }
-  .statistics__sub-heading {
-    font-weight: 300; }
+    flex-wrap: wrap;
+    align-items: center; }
+    .statistics__brand-container img {
+      width: 16rem;
+      object-fit: contain;
+      margin-right: 4rem;
+      margin-bottom: 4rem; }
 
 .navigation {
   background-color: transparent;
