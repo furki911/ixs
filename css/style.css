@@ -145,6 +145,7 @@ h6 {
     display: flex;
     padding: 0 4rem; }
   .info__item {
+    flex-basis: 33.33%;
     margin: 4rem 0; }
     .info__item:not(:last-child) {
       margin-right: 10rem; }
