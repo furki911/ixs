@@ -22,6 +22,9 @@
          width: 8%;
          height: 3px;
          background-color: $color-primary-light;
+         @media only screen and (max-width: $bp-small) {
+            width: 16%;
+         }
       }
    }
 

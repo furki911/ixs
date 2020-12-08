@@ -81,7 +81,7 @@ h4 {
       font-size: 2.3rem; } }
   @media only screen and (max-width: 32.5em) {
     h4 {
-      font-size: 1.8rem; } }
+      font-size: 2rem; } }
 
 h5 {
   font-size: 2rem; }
@@ -90,10 +90,13 @@ h5 {
       font-size: 1.8rem; } }
   @media only screen and (max-width: 25em) {
     h5 {
-      font-size: 1.4rem; } }
+      font-size: 1.6rem; } }
 
 h6 {
   font-size: 1.6rem; }
+  @media only screen and (max-width: 25em) {
+    h6 {
+      font-size: 1.2rem; } }
 
 .btn {
   border: none;
@@ -240,6 +243,9 @@ h6 {
       @media only screen and (max-width: 40em) {
         .info__heading::after {
           width: 14%; } }
+      @media only screen and (max-width: 25em) {
+        .info__heading::after {
+          width: 20%; } }
   .info__item-container {
     display: flex;
     padding: 0 4rem; }
@@ -452,6 +458,9 @@ h6 {
       @media only screen and (max-width: 50em) {
         .statistics__heading::after {
           width: 12%; } }
+      @media only screen and (max-width: 25em) {
+        .statistics__heading::after {
+          width: 20%; } }
   .statistics__sub-heading {
     margin: 4rem 0 2rem;
     text-align: center; }
@@ -656,6 +665,9 @@ h6 {
       text-decoration-line: none;
       font-size: 1.4rem;
       font-weight: 100; }
+      @media only screen and (max-width: 25em) {
+        .sub-footer__social-media a {
+          font-size: 1.2rem; } }
   .sub-footer__content {
     padding: 4rem 0;
     display: flex;
@@ -749,6 +761,9 @@ h6 {
       width: 8%;
       height: 3px;
       background-color: #abbeda; }
+      @media only screen and (max-width: 25em) {
+        .what-we-offer__heading::after {
+          width: 16%; } }
   .what-we-offer__item-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(37rem, 1fr));
@@ -806,6 +821,9 @@ h6 {
       width: 12%;
       height: 3px;
       background-color: #365e99; }
+      @media only screen and (max-width: 25em) {
+        .our-work__heading::after {
+          width: 20%; } }
 
 .filter-menu {
   margin: 2rem;
@@ -830,7 +848,8 @@ h6 {
       padding: 1rem 1.50rem; } }
   @media only screen and (max-width: 25em) {
     .filter-menu li {
-      padding: 1rem .8rem; } }
+      padding: 1rem .8rem;
+      font-size: 1.1rem; } }
 
 .filter-menu li:hover,
 .filter-menu li.current {
