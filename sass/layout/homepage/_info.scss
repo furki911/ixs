@@ -6,6 +6,43 @@
    padding: 8rem 0;
    margin-top: 60rem; // becoz position of .navigation is absolute 
 
+   @media only screen and (min-height: 600px) {
+      & {
+         margin-top: 55rem; 
+      }
+   }
+   @media only screen and (min-height: 680px) {
+      & {
+         margin-top: 64rem; 
+      }
+   }
+   @media only screen and (min-height: 768px) {
+      & {
+         margin-top: 65rem; 
+      }
+   }
+   @media only screen and (min-height: 800px) {
+      & {
+         margin-top: 72rem;         
+      }
+   }
+   @media only screen and (min-height: 900px) {
+      & {
+         margin-top: 80rem;  
+      }
+   }
+
+   @media only screen and (max-height: 600px) {
+      & {
+         margin-top: 48rem; 
+      }
+   }
+   @media only screen and (max-height: 450px) {
+      & {
+         margin-top: 30rem; 
+      }
+   }
+
    &__sub-heading {
       color: #969696;
       font-weight: 100;
@@ -22,21 +59,52 @@
          width: 8%;
          height: 3px;
          background-color: $color-primary;
+
+         @media only screen and (max-width: $bp-big) {
+            width: 14%;
+         } 
       }
    }
 
    &__item-container {
       display: flex;
-      // justify-content: center;
       padding: 0 4rem;
+
+      @media only screen and (max-width: $bp-large) {
+         padding: 0 2rem;
+      } 
+
+      @media only screen and (max-width: $bp-medium) {
+         flex-wrap: wrap;
+      } 
    }
 
    &__item {
       flex-basis: 33.33%;
       margin: 4rem 0;
 
+      @media only screen and (max-width: $bp-medium) {
+         flex-basis: 100%;
+      } 
+
       &:not(:last-child) {
          margin-right: 10rem;
+
+         @media only screen and (max-width: $bp-mega){
+            margin-right: 4rem;
+         }
+
+         @media only screen and (max-width: $bp-large) {
+            margin-right: 2rem;
+         } 
+
+         @media only screen and (max-width: $bp-big) {
+            margin-right: 1.5rem;
+         }
+         
+         @media only screen and (max-width: $bp-medium) {
+            margin: 1.5rem;
+         } 
       }
 
       &-heading {

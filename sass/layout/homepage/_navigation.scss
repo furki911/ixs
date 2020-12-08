@@ -2,9 +2,18 @@
    background-color: transparent;
    position: relative;
 
+   &__heading {
+
+   }
+
    &__sub-heading {
       margin-bottom: 4rem;
-      width: 50%;
+      width: 60%;
+
+      @media only screen and (max-width: $bp-big) {
+         width: 100%;
+         margin-bottom: 2rem;
+      }
    }
 
    &__item {
@@ -19,6 +28,15 @@
       padding: 0 20rem;
       color: $color-white;
       transition: all .8s cubic-bezier(.83,.15,.47,.84);
+
+      @media only screen and (max-width: $bp-laptop-large) {
+         padding: 0 5rem;
+      }
+      @media only screen and (max-width: $bp-large) {
+         padding: 0 2rem;
+      }
+
+
 
       &::after {
          content: ""; 

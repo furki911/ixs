@@ -2,9 +2,49 @@ body {
    font-family: 'Noto Sans JP', sans-serif;
 }
 
-h1 { font-size: 8rem;}
-h2 { font-size: 6rem;}
-h3 { font-size: 4rem;}
-h4 { font-size: 3rem;}
-h5 { font-size: 2rem;}
-h6 { font-size: 1.6rem;}
+h1 { font-size: 8rem;
+}
+h2 { font-size: 6rem;
+   @media only screen and (max-width: $bp-mega) {
+      font-size: 4.5rem;
+   }
+   @media only screen and (max-width: $bp-big) {
+      font-size: 2.6rem;
+   }
+   @media only screen and (max-width: $bp-small) {
+      font-size: 2rem;
+   }
+}
+h3 { font-size: 4rem;
+   @media only screen and (max-width: $bp-large) {
+      font-size: 3.7rem;
+   } 
+   @media only screen and (max-width: $bp-big) {
+      font-size: 3.5rem;
+   } 
+   @media only screen and (max-width: $bp-small) {
+      font-size: 3rem;
+   }
+}
+h4 { font-size: 3rem;
+
+   @media only screen and (max-width: $bp-large) {
+      font-size: 2.6rem;
+   } 
+   @media only screen and (max-width: $bp-big) {
+      font-size: 2.3rem;
+   } 
+   @media only screen and (max-width: $bp-medium) {
+      font-size: 1.8rem;
+   }    
+}
+h5 { font-size: 2rem;
+   @media only screen and (max-width: $bp-big) {
+      font-size: 1.8rem;
+   } 
+   @media only screen and (max-width: $bp-small) {
+      font-size: 1.4rem;
+   }
+}
+h6 { font-size: 1.6rem;
+}

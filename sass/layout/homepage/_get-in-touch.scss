@@ -1,5 +1,4 @@
 .get-in-touch {
-   
    background: $color-primary-light-1;
    &__container {
       display: flex;
@@ -7,11 +6,35 @@
       padding: 8rem 14rem;
       color: $color-white;
       align-items: center;
+
+      @media only screen and (max-width: $bp-mega) {
+         padding: 6rem;
+      }  
+
+      @media only screen and (max-width: $bp-big) {
+         padding: 4rem 2rem;
+      } 
+      @media only screen and (max-width: $bp-small) {
+         flex-direction: column;
+     }
+   }
+
+   &__content {
+      flex-basis: 70%;
+      
+      @media only screen and (max-width: $bp-medium) {
+         flex-basis: 60%;
+      }
    }
 
    &__sub-heading {
       text-transform: uppercase;
       letter-spacing: 3px;
       margin: .5rem 0;
+
+      @media only screen and (max-width: $bp-big) {
+         font-size: 1.3rem;
+         letter-spacing: auto;
+      } 
    }
 }

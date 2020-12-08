@@ -4,8 +4,30 @@
    padding: 8rem 8rem 4rem;
    justify-content: center;
 
+   @media only screen and (max-width: $bp-mega) {
+      background: #24487d;
+      padding: 4rem 8rem 0;
+   }  
+
+   @media only screen and (max-width: $bp-large) {
+      padding: 4rem 2rem;
+      padding-bottom: 0;
+   }   
+   @media only screen and (max-width: $bp-small) {
+      padding: 2rem;
+   }  
+
    &__img {
-      margin-left: 12rem;
+      margin-left: 8rem;
+
+      @media only screen and (max-width: $bp-laptop-large) {
+         margin-left: 4rem;
+      }
+
+      @media only screen and (max-width: $bp-mega) {
+         display: none;
+      }    
+
       img {
          width: 100%;
       }
@@ -15,12 +37,34 @@
       display: flex;
       justify-content: center;
       color: $color-white;
+
+      @media only screen and (max-width: $bp-small) {
+         flex-direction: column;
+      }
    }
 
    &__links {
       list-style: none;
       padding: 1rem 2rem 0rem;
       flex-basis: 40%;
+
+      @media only screen and (max-width: $bp-laptop-large) {
+         flex-basis: 60%;
+         padding: 0;
+         margin-left: 1rem;
+      }      
+      @media only screen and (max-width: $bp-mega) {
+         flex-basis: 60%;
+      }      
+
+      @media only screen and (max-width: $bp-big) {
+         flex-basis: 80%;
+      } 
+
+      @media only screen and (max-width: $bp-big) {
+         order: 1;
+         flex-basis: 100%;
+      } 
 
       & li {
          border-right: .5rem solid transparent;
@@ -49,6 +93,11 @@
       color: $color-primary-light;
       transition: all .2s;
 
+      
+      @media only screen and (max-width: $bp-medium) {
+         font-size: 1rem;
+      } 
+
       &:focus {
          outline: none;
       }
@@ -56,6 +105,20 @@
 
    &__description {
       padding: 0 4rem;
+
+      @media only screen and (max-width: $bp-laptop-large) {
+         flex-basis: min-content;
+         padding: 0;
+         margin-left: 2rem;
+      }
+
+      @media only screen and (max-width: $bp-mega) {
+         margin-left: 4rem;
+      }  
+
+      @media only screen and (max-width: $bp-medium) {
+         margin-left: 0;
+      } 
 
       & .btn {
          margin: 3rem 0;
@@ -76,6 +139,10 @@
          width: 12%;
          height: 2px;
          background-color: $color-white;
+
+         @media only screen and (max-width: $bp-big) {
+            width: 16%;
+         } 
       }
    } 
 
@@ -86,5 +153,13 @@
       line-height: 1.8;
       color: #d7e0ee;
       font-weight: 300;
+
+      @media only screen and (max-width: $bp-laptop-large) {
+         width: 100%;   
+      }
+
+      @media only screen and (max-width: $bp-mega) {
+         margin-top: 1rem;
+      }  
    }
 }

@@ -8,6 +8,12 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 40em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 32.5em) {
+    html {
+      font-weight: 50%; } }
 
 body {
   box-sizing: border-box; }
@@ -43,15 +49,48 @@ h1 {
 
 h2 {
   font-size: 6rem; }
+  @media only screen and (max-width: 65em) {
+    h2 {
+      font-size: 4.5rem; } }
+  @media only screen and (max-width: 40em) {
+    h2 {
+      font-size: 2.6rem; } }
+  @media only screen and (max-width: 25em) {
+    h2 {
+      font-size: 2rem; } }
 
 h3 {
   font-size: 4rem; }
+  @media only screen and (max-width: 50em) {
+    h3 {
+      font-size: 3.7rem; } }
+  @media only screen and (max-width: 40em) {
+    h3 {
+      font-size: 3.5rem; } }
+  @media only screen and (max-width: 25em) {
+    h3 {
+      font-size: 3rem; } }
 
 h4 {
   font-size: 3rem; }
+  @media only screen and (max-width: 50em) {
+    h4 {
+      font-size: 2.6rem; } }
+  @media only screen and (max-width: 40em) {
+    h4 {
+      font-size: 2.3rem; } }
+  @media only screen and (max-width: 32.5em) {
+    h4 {
+      font-size: 1.8rem; } }
 
 h5 {
   font-size: 2rem; }
+  @media only screen and (max-width: 40em) {
+    h5 {
+      font-size: 1.8rem; } }
+  @media only screen and (max-width: 25em) {
+    h5 {
+      font-size: 1.4rem; } }
 
 h6 {
   font-size: 1.6rem; }
@@ -96,14 +135,26 @@ h6 {
     justify-content: space-between;
     padding-bottom: 2px;
     border-bottom: 1px solid #5187a6; }
+    @media only screen and (max-width: 65em) {
+      .header__nav {
+        padding: 0 4rem; } }
+    @media only screen and (max-width: 50em) {
+      .header__nav {
+        padding: 0 3rem; } }
   .header__logo {
-    width: 10rem; }
+    width: 20rem; }
+    @media only screen and (max-width: 40em) {
+      .header__logo {
+        width: 15rem; } }
     .header__logo-img {
       width: 100%;
       height: 100%; }
   .header__links {
     display: flex;
     list-style: none; }
+    @media only screen and (max-width: 40em) {
+      .header__links {
+        display: none; } }
   .header__link-text {
     text-decoration-line: none;
     color: #ffffff;
@@ -112,6 +163,9 @@ h6 {
     transition: all .3s;
     padding-bottom: 1rem;
     border-bottom: 1px solid transparent; }
+    @media only screen and (max-width: 50em) {
+      .header__link-text {
+        font-size: 1.4rem; } }
     .header__link-text:focus, .header__link-text:active {
       outline: none; }
     .header__link-text:hover, .header__link-text:focus, .header__link-text:active {
@@ -120,6 +174,12 @@ h6 {
       border-bottom: 1px solid #ffffff; }
   .header__link:not(:last-child) {
     margin-right: 2rem; }
+    @media only screen and (max-width: 65em) {
+      .header__link:not(:last-child) {
+        margin-right: 1.2rem; } }
+    @media only screen and (max-width: 50em) {
+      .header__link:not(:last-child) {
+        margin-right: 1rem; } }
 
 .info {
   display: flex;
@@ -128,6 +188,27 @@ h6 {
   text-align: center;
   padding: 8rem 0;
   margin-top: 60rem; }
+  @media only screen and (min-height: 600px) {
+    .info {
+      margin-top: 55rem; } }
+  @media only screen and (min-height: 680px) {
+    .info {
+      margin-top: 64rem; } }
+  @media only screen and (min-height: 768px) {
+    .info {
+      margin-top: 65rem; } }
+  @media only screen and (min-height: 800px) {
+    .info {
+      margin-top: 72rem; } }
+  @media only screen and (min-height: 900px) {
+    .info {
+      margin-top: 80rem; } }
+  @media only screen and (max-height: 600px) {
+    .info {
+      margin-top: 48rem; } }
+  @media only screen and (max-height: 450px) {
+    .info {
+      margin-top: 30rem; } }
   .info__sub-heading {
     color: #969696;
     font-weight: 100;
@@ -141,14 +222,38 @@ h6 {
       width: 8%;
       height: 3px;
       background-color: #365e99; }
+      @media only screen and (max-width: 40em) {
+        .info__heading::after {
+          width: 14%; } }
   .info__item-container {
     display: flex;
     padding: 0 4rem; }
+    @media only screen and (max-width: 50em) {
+      .info__item-container {
+        padding: 0 2rem; } }
+    @media only screen and (max-width: 32.5em) {
+      .info__item-container {
+        flex-wrap: wrap; } }
   .info__item {
     flex-basis: 33.33%;
     margin: 4rem 0; }
+    @media only screen and (max-width: 32.5em) {
+      .info__item {
+        flex-basis: 100%; } }
     .info__item:not(:last-child) {
       margin-right: 10rem; }
+      @media only screen and (max-width: 65em) {
+        .info__item:not(:last-child) {
+          margin-right: 4rem; } }
+      @media only screen and (max-width: 50em) {
+        .info__item:not(:last-child) {
+          margin-right: 2rem; } }
+      @media only screen and (max-width: 40em) {
+        .info__item:not(:last-child) {
+          margin-right: 1.5rem; } }
+      @media only screen and (max-width: 32.5em) {
+        .info__item:not(:last-child) {
+          margin: 1.5rem; } }
     .info__item-heading {
       margin: 1.6rem 0; }
     .info__item-logo .fa {
@@ -169,18 +274,53 @@ h6 {
   background-image: linear-gradient(to right, #f8f8f8 25%, #24487d 25%, #24487d 100%);
   padding: 8rem 8rem 4rem;
   justify-content: center; }
+  @media only screen and (max-width: 65em) {
+    .about {
+      background: #24487d;
+      padding: 4rem 8rem 0; } }
+  @media only screen and (max-width: 50em) {
+    .about {
+      padding: 4rem 2rem;
+      padding-bottom: 0; } }
+  @media only screen and (max-width: 25em) {
+    .about {
+      padding: 2rem; } }
   .about__img {
-    margin-left: 12rem; }
+    margin-left: 8rem; }
+    @media only screen and (max-width: 90em) {
+      .about__img {
+        margin-left: 4rem; } }
+    @media only screen and (max-width: 65em) {
+      .about__img {
+        display: none; } }
     .about__img img {
       width: 100%; }
   .about__info {
     display: flex;
     justify-content: center;
     color: #ffffff; }
+    @media only screen and (max-width: 25em) {
+      .about__info {
+        flex-direction: column; } }
   .about__links {
     list-style: none;
     padding: 1rem 2rem 0rem;
     flex-basis: 40%; }
+    @media only screen and (max-width: 90em) {
+      .about__links {
+        flex-basis: 60%;
+        padding: 0;
+        margin-left: 1rem; } }
+    @media only screen and (max-width: 65em) {
+      .about__links {
+        flex-basis: 60%; } }
+    @media only screen and (max-width: 40em) {
+      .about__links {
+        flex-basis: 80%; } }
+    @media only screen and (max-width: 40em) {
+      .about__links {
+        order: 1;
+        flex-basis: 100%; } }
     .about__links li {
       border-right: .5rem solid transparent;
       transition: all .2s; }
@@ -198,10 +338,24 @@ h6 {
     font-weight: 400;
     color: #abbeda;
     transition: all .2s; }
+    @media only screen and (max-width: 32.5em) {
+      .about__link-item {
+        font-size: 1rem; } }
     .about__link-item:focus {
       outline: none; }
   .about__description {
     padding: 0 4rem; }
+    @media only screen and (max-width: 90em) {
+      .about__description {
+        flex-basis: min-content;
+        padding: 0;
+        margin-left: 2rem; } }
+    @media only screen and (max-width: 65em) {
+      .about__description {
+        margin-left: 4rem; } }
+    @media only screen and (max-width: 32.5em) {
+      .about__description {
+        margin-left: 0; } }
     .about__description .btn {
       margin: 3rem 0; }
   .about__sub-heading {
@@ -217,6 +371,9 @@ h6 {
       width: 12%;
       height: 2px;
       background-color: #ffffff; }
+      @media only screen and (max-width: 40em) {
+        .about__sub-heading::after {
+          width: 16%; } }
   .about__paragraph {
     margin-top: 4rem;
     font-size: 1.3rem;
@@ -224,6 +381,12 @@ h6 {
     line-height: 1.8;
     color: #d7e0ee;
     font-weight: 300; }
+    @media only screen and (max-width: 90em) {
+      .about__paragraph {
+        width: 100%; } }
+    @media only screen and (max-width: 65em) {
+      .about__paragraph {
+        margin-top: 1rem; } }
 
 .get-in-touch {
   background: #4d3699; }
@@ -233,13 +396,35 @@ h6 {
     padding: 8rem 14rem;
     color: #ffffff;
     align-items: center; }
+    @media only screen and (max-width: 65em) {
+      .get-in-touch__container {
+        padding: 6rem; } }
+    @media only screen and (max-width: 40em) {
+      .get-in-touch__container {
+        padding: 4rem 2rem; } }
+    @media only screen and (max-width: 25em) {
+      .get-in-touch__container {
+        flex-direction: column; } }
+  .get-in-touch__content {
+    flex-basis: 70%; }
+    @media only screen and (max-width: 32.5em) {
+      .get-in-touch__content {
+        flex-basis: 60%; } }
   .get-in-touch__sub-heading {
     text-transform: uppercase;
     letter-spacing: 3px;
     margin: .5rem 0; }
+    @media only screen and (max-width: 40em) {
+      .get-in-touch__sub-heading {
+        font-size: 1.3rem;
+        letter-spacing: auto; } }
 
 .statistics {
   padding: 5rem; }
+  @media only screen and (max-width: 50em) {
+    .statistics {
+      padding: 5rem 2rem;
+      padding-bottom: 0; } }
   .statistics__heading {
     text-align: center; }
     .statistics__heading::after {
@@ -249,26 +434,46 @@ h6 {
       width: 6%;
       height: 3px;
       background-color: #365e99; }
+      @media only screen and (max-width: 50em) {
+        .statistics__heading::after {
+          width: 12%; } }
   .statistics__sub-heading {
-    margin: 4rem 0 1rem;
+    margin: 4rem 0 2rem;
     text-align: center; }
+    @media only screen and (max-width: 50em) {
+      .statistics__sub-heading {
+        margin: 0 0 2rem; } }
   .statistics__brand-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center; }
     .statistics__brand-container img {
-      width: 16rem;
+      width: 10rem;
       object-fit: contain;
       margin-right: 4rem;
-      margin-bottom: 4rem; }
+      margin-bottom: 4rem;
+      height: 10rem;
+      border-radius: 100%; }
+      @media only screen and (max-width: 50em) {
+        .statistics__brand-container img {
+          width: 12rem; } }
+      @media only screen and (max-width: 32.5em) {
+        .statistics__brand-container img {
+          margin-right: 2rem;
+          margin-bottom: 2rem;
+          width: 8rem; } }
 
 .navigation {
   background-color: transparent;
   position: relative; }
   .navigation__sub-heading {
     margin-bottom: 4rem;
-    width: 50%; }
+    width: 60%; }
+    @media only screen and (max-width: 40em) {
+      .navigation__sub-heading {
+        width: 100%;
+        margin-bottom: 2rem; } }
   .navigation__item {
     width: 100%;
     height: 85vh;
@@ -281,6 +486,12 @@ h6 {
     padding: 0 20rem;
     color: #ffffff;
     transition: all 0.8s cubic-bezier(0.83, 0.15, 0.47, 0.84); }
+    @media only screen and (max-width: 90em) {
+      .navigation__item {
+        padding: 0 5rem; } }
+    @media only screen and (max-width: 50em) {
+      .navigation__item {
+        padding: 0 2rem; } }
     .navigation__item::after {
       content: "";
       position: absolute;
@@ -323,9 +534,28 @@ h6 {
 
 .our-skills {
   display: flex; }
+  @media only screen and (max-width: 40em) {
+    .our-skills {
+      flex-direction: column;
+      padding: 4rem 6rem; } }
+  @media only screen and (max-width: 32.5em) {
+    .our-skills {
+      padding: 4rem 2rem; } }
+  @media only screen and (max-width: 25em) {
+    .our-skills {
+      padding: 4rem 1rem; } }
   .our-skills > * {
     flex-basis: 50%;
     padding: 8rem; }
+    @media only screen and (max-width: 65em) {
+      .our-skills > * {
+        padding: 8rem 4rem; } }
+    @media only screen and (max-width: 50em) {
+      .our-skills > * {
+        padding: 4rem 1rem; } }
+    @media only screen and (max-width: 40em) {
+      .our-skills > * {
+        padding: 1rem; } }
   .our-skills__sub-heading {
     font-style: italic; }
   .our-skills__heading {
@@ -380,9 +610,25 @@ h6 {
     color: #ffffff;
     padding: 4rem 10rem;
     padding-bottom: 0; }
+    @media only screen and (max-width: 65em) {
+      .sub-footer__container {
+        padding: 4rem;
+        padding-bottom: 0; } }
+    @media only screen and (max-width: 40em) {
+      .sub-footer__container {
+        align-items: center; } }
+    @media only screen and (max-width: 32.5em) {
+      .sub-footer__container {
+        padding: 0 2rem; } }
+    @media only screen and (max-width: 25em) {
+      .sub-footer__container {
+        padding: 0 .5rem; } }
   .sub-footer__social-media {
     padding: 4rem 0 3rem;
     border-bottom: 1px solid #1e3948; }
+    @media only screen and (max-width: 40em) {
+      .sub-footer__social-media {
+        align-self: stretch; } }
     .sub-footer__social-media ul {
       display: flex;
       list-style: none;
@@ -396,8 +642,18 @@ h6 {
     padding: 4rem 0;
     display: flex;
     justify-content: space-between; }
+    @media only screen and (max-width: 40em) {
+      .sub-footer__content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; }
+        .sub-footer__content > *:not(:last-child) {
+          margin-bottom: 4rem; } }
   .sub-footer__logo {
     flex-basis: 35%; }
+    @media only screen and (max-width: 40em) {
+      .sub-footer__logo {
+        text-align: center; } }
     .sub-footer__logo img {
       width: 40%;
       object-fit: contain; }
@@ -410,6 +666,9 @@ h6 {
     margin-bottom: 1.6rem;
     border-left: 0.5rem solid #ffffff;
     padding-left: 1rem; }
+    @media only screen and (max-width: 40em) {
+      .sub-footer__heading {
+        border-left-style: none; } }
   .sub-footer__item {
     list-style: none;
     transition: all .2s; }
@@ -445,11 +704,20 @@ h6 {
     border-top: 1px solid #1e3948;
     padding: 4rem 0;
     letter-spacing: 1px; }
+    @media only screen and (max-width: 40em) {
+      .sub-footer .footer {
+        padding: 2rem 0; } }
+    @media only screen and (max-width: 25em) {
+      .sub-footer .footer {
+        font-size: 1rem; } }
 
 .what-we-offer {
   padding: 8rem 0;
   background: #24487d;
   color: #ffffff; }
+  @media only screen and (max-width: 25em) {
+    .what-we-offer {
+      padding: 2rem 0; } }
   .what-we-offer__sub-heading {
     text-align: center;
     margin-bottom: 1.4rem;
@@ -469,9 +737,15 @@ h6 {
     grid-gap: 4rem;
     padding: 4rem 0;
     min-height: 60vh; }
+    @media only screen and (max-width: 25em) {
+      .what-we-offer__item-container {
+        grid-template-columns: 1fr; } }
   .what-we-offer__item {
     position: relative;
     padding: 1rem 4rem; }
+    @media only screen and (max-width: 25em) {
+      .what-we-offer__item {
+        padding: 1rem; } }
     .what-we-offer__item.delete {
       display: none; }
     .what-we-offer__item-heading {
@@ -494,6 +768,12 @@ h6 {
 
 .our-work {
   padding: 6rem; }
+  @media only screen and (max-width: 65em) {
+    .our-work {
+      padding: 6rem 2rem; } }
+  @media only screen and (max-width: 32.5em) {
+    .our-work {
+      padding: 4rem 0; } }
   .our-work__container {
     min-height: 85vh; }
   .our-work__sub-heading {
@@ -505,7 +785,7 @@ h6 {
       content: '';
       display: block;
       margin: 1rem auto;
-      width: 6%;
+      width: 12%;
       height: 3px;
       background-color: #365e99; }
 
@@ -515,6 +795,9 @@ h6 {
   display: flex;
   justify-content: center;
   list-style: none; }
+  @media only screen and (max-width: 32.5em) {
+    .filter-menu {
+      margin: 0; } }
 
 .filter-menu li {
   padding: 1rem 2rem;
@@ -524,6 +807,12 @@ h6 {
   font-weight: 500;
   cursor: pointer;
   transition: all .3s; }
+  @media only screen and (max-width: 32.5em) {
+    .filter-menu li {
+      padding: 1rem 1.50rem; } }
+  @media only screen and (max-width: 25em) {
+    .filter-menu li {
+      padding: 1rem .8rem; } }
 
 .filter-menu li:hover,
 .filter-menu li.current {
@@ -533,6 +822,9 @@ h6 {
 .filter-item {
   list-style: none;
   padding: 1rem; }
+  @media only screen and (max-width: 40em) {
+    .filter-item {
+      padding: 0; } }
   .filter-item li {
     width: 50%;
     padding: 1rem;
@@ -557,6 +849,9 @@ h6 {
   width: 100%;
   height: 25rem;
   object-fit: cover; }
+  @media only screen and (max-width: 65em) {
+    .filter-item img {
+      height: 20rem; } }
 
 @media screen and (min-width: 768px) {
   .filter-item li.active,
