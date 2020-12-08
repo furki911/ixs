@@ -187,7 +187,10 @@ h6 {
   justify-content: center;
   text-align: center;
   padding: 8rem 0;
-  margin-top: 60rem; }
+  margin-top: 40rem; }
+  @media only screen and (min-height: 500px) {
+    .info {
+      margin-top: 48rem; } }
   @media only screen and (min-height: 600px) {
     .info {
       margin-top: 55rem; } }
@@ -203,12 +206,24 @@ h6 {
   @media only screen and (min-height: 900px) {
     .info {
       margin-top: 80rem; } }
-  @media only screen and (max-height: 600px) {
+  @media only screen and (min-height: 1000px) {
     .info {
-      margin-top: 48rem; } }
+      margin-top: 90rem; } }
+  @media only screen and (min-height: 1100px) {
+    .info {
+      margin-top: 100rem; } }
+  @media only screen and (min-height: 1200px) {
+    .info {
+      margin-top: 47rem; } }
   @media only screen and (max-height: 450px) {
     .info {
+      margin-top: 35rem; } }
+  @media only screen and (max-height: 360px) {
+    .info {
       margin-top: 30rem; } }
+  @media only screen and (max-height: 300px) {
+    .info {
+      margin-top: 25rem; } }
   .info__sub-heading {
     color: #969696;
     font-weight: 100;
@@ -492,6 +507,9 @@ h6 {
     @media only screen and (max-width: 50em) {
       .navigation__item {
         padding: 0 2rem; } }
+    @media only screen and (min-height: 1200px) {
+      .navigation__item {
+        height: 40vh; } }
     .navigation__item::after {
       content: "";
       position: absolute;
