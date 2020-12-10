@@ -624,6 +624,18 @@ h6 {
 
 .our-skills {
   display: flex; }
+  .our-skills-outer {
+    padding: 8rem 0; }
+    .our-skills-outer > h4::after {
+      content: '';
+      display: block;
+      margin: 1rem auto;
+      width: 6%;
+      height: 3px;
+      background-color: #365e99; }
+      @media only screen and (max-width: 25em) {
+        .our-skills-outer > h4::after {
+          width: 20%; } }
   @media only screen and (max-width: 40em) {
     .our-skills {
       flex-direction: column;
@@ -636,13 +648,13 @@ h6 {
       padding: 4rem 1rem; } }
   .our-skills > * {
     flex-basis: 50%;
-    padding: 8rem; }
+    padding: 4rem; }
     @media only screen and (max-width: 65em) {
       .our-skills > * {
-        padding: 8rem 4rem; } }
+        padding: 4rem; } }
     @media only screen and (max-width: 50em) {
       .our-skills > * {
-        padding: 4rem 1rem; } }
+        padding: 2rem 1rem; } }
     @media only screen and (max-width: 40em) {
       .our-skills > * {
         padding: 1rem; } }
