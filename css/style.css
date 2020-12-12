@@ -108,7 +108,7 @@ h6 {
   box-shadow: 0 0.5rem 2rem rgba(255, 255, 255, 0.2);
   margin: .5rem;
   cursor: pointer; }
-  .btn a {
+  .btn[class^='btn'], .btn a {
     display: inline-block;
     text-decoration-line: none;
     color: inherit; }
@@ -320,7 +320,9 @@ h6 {
         flex-wrap: wrap; } }
   .info__item {
     flex-basis: 33.33%;
-    margin: 4rem 0; }
+    margin: 4rem 0;
+    display: flex;
+    flex-direction: column; }
     @media only screen and (max-width: 32.5em) {
       .info__item {
         flex-basis: 100%; } }
@@ -351,7 +353,14 @@ h6 {
       font-weight: 300;
       color: #6b6b6b;
       text-align: justify;
-      text-justify: inter-word; }
+      text-justify: inter-word;
+      margin-bottom: 1rem; }
+    .info__item .btn {
+      margin-top: auto;
+      margin-left: auto;
+      backface-visibility: hidden; }
+      .info__item .btn:hover {
+        color: #6e1ea6; }
 
 .about {
   display: flex;
@@ -896,7 +905,8 @@ h6 {
   @media only screen and (max-width: 25em) {
     .filter-menu li {
       padding: 1rem .8rem;
-      font-size: 1.1rem; } }
+      font-size: 1rem;
+      font-weight: 400; } }
 
 .filter-menu li:hover,
 .filter-menu li.current {

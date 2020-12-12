@@ -11,7 +11,7 @@
    margin: .5rem;
    cursor: pointer;
 
-   a {
+   &[class^='btn'], a {
       display: inline-block;
       text-decoration-line: none;
       color: inherit;
@@ -35,5 +35,9 @@
    &__primary {
       background-color: transparent;
       color: $color-white;
+   }
+
+   &__secondary {
+
    }
 }

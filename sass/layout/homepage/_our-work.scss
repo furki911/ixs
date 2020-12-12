@@ -10,7 +10,7 @@
     }
 
    &__container {
-      min-height: 85vh; // Change according to projects number
+      min-height: 85vh; // Change according to projects number 
    }
 
    &__sub-heading {
@@ -59,7 +59,8 @@
 
     @media only screen and (max-width: $bp-small) {
         padding: 1rem .8rem;
-        font-size: 1.1rem;
+        font-size: 1rem;
+        font-weight: 400;
     }
 }
 .filter-menu li:hover,

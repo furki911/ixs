@@ -112,6 +112,8 @@
    &__item {
       flex-basis: 33.33%;
       margin: 4rem 0;
+      display: flex;
+      flex-direction: column;
 
       @media only screen and (max-width: $bp-medium) {
          flex-basis: 100%;
@@ -155,6 +157,17 @@
          color: $color-text;
          text-align: justify;
          text-justify: inter-word;
+         margin-bottom: 1rem
+      }
+
+      .btn {
+         margin-top: auto;
+         margin-left: auto;
+         backface-visibility: hidden;
+
+         &:hover {
+            color: #6e1ea6;
+         }
       }
    }
 }
