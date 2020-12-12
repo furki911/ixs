@@ -468,8 +468,8 @@ h6 {
         .about__sub-heading::after {
           width: 16%; } }
   .about__paragraph {
-    margin-top: 4rem;
-    font-size: 1.3rem;
+    margin-top: 3rem;
+    font-size: 1.4rem;
     width: 70%;
     line-height: 1.8;
     color: #d7e0ee;
@@ -559,6 +559,11 @@ h6 {
           margin-right: 2rem;
           margin-bottom: 2rem;
           width: 8rem; } }
+      @media only screen and (max-width: 32.5em) {
+        .statistics__brand-container img {
+          margin-right: 1rem;
+          margin-bottom: 1rem;
+          width: 8rem; } }
 
 .navigation {
   background-color: transparent;
@@ -598,7 +603,7 @@ h6 {
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: linear-gradient(to right top, rgba(110, 30, 166, 0.9) 0%, rgba(110, 30, 166, 0.9) 10%, rgba(38, 105, 144, 0.9));
+      background-image: linear-gradient(to right top, rgba(110, 30, 166, 0.6) 0%, rgba(110, 30, 166, 0.6) 10%, rgba(38, 105, 144, 0.6));
       opacity: .5;
       z-index: -1; }
     .navigation__item-1 {
@@ -742,7 +747,8 @@ h6 {
         text-align: center; } }
     .sub-footer__logo img {
       width: 40%;
-      object-fit: contain; }
+      object-fit: contain;
+      transform: scale(1.5); }
   .sub-footer__useful-links > *:not(:first-child) {
     padding-left: 1rem; }
   .sub-footer__heading {
@@ -795,7 +801,7 @@ h6 {
         padding: 2rem 0; } }
     @media only screen and (max-width: 25em) {
       .sub-footer .footer {
-        font-size: 1rem; } }
+        font-size: .9rem; } }
 
 .what-we-offer {
   padding: 8rem 0;
@@ -831,17 +837,17 @@ h6 {
         grid-template-columns: 1fr; } }
   .what-we-offer__item {
     position: relative;
-    padding: 1rem 4rem; }
+    padding: 0 4rem; }
     @media only screen and (max-width: 25em) {
       .what-we-offer__item {
-        padding: 1rem; } }
+        padding: 0 1rem; } }
     .what-we-offer__item.delete {
       display: none; }
     .what-we-offer__item-heading {
       margin-bottom: 2rem; }
     .what-we-offer__item-paragraph {
-      font-size: 1.2rem;
-      font-weight: 300;
+      font-size: 1.4rem;
+      font-weight: 100;
       color: #eeeeee; }
     .what-we-offer__item .fa {
       font-size: 4rem;

@@ -58,6 +58,11 @@
             margin-bottom: 2rem;
             width: 8rem; 
          }
+         @media only screen and (max-width: $bp-medium) {
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+            width: 8rem; 
+         }
       }
    }
 }

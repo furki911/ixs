@@ -43,10 +43,10 @@
 
    &__item {
       position: relative;
-      padding: 1rem 4rem;
+      padding: 0 4rem;
 
       @media only screen and (max-width: $bp-small) {
-         padding: 1rem;
+         padding: 0 1rem;
       }  
 
       &.delete {
@@ -58,8 +58,8 @@
       }
 
       &-paragraph {
-         font-size: 1.2rem;
-         font-weight: 300;
+         font-size: 1.4rem;
+         font-weight: 100;
          color: $color-gray;
       }
 
