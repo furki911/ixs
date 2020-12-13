@@ -165,6 +165,10 @@
          margin-left: auto;
          backface-visibility: hidden;
 
+         @media only screen and (max-width: $bp-medium) {
+            margin-top: 2rem;
+         } 
+
          &:hover {
             color: #6e1ea6;
          }

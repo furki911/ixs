@@ -1,0 +1,38 @@
+.social-media {
+   display: flex;
+   justify-content: space-between;
+   font-size: 1.6rem;
+   padding: .5rem 2rem;
+   color: $color-secondary;
+   @media only screen and (max-width: $bp-small) {
+      padding: .5rem 1rem;
+   } 
+
+   &__email {
+      .fa {
+         margin-right: .6rem;
+      }
+
+      a {
+         text-decoration-line: none;
+         color: currentColor;
+         font-weight: 400;
+      }
+   }
+
+   &__icons {
+      :not(:last-child) {
+         margin-right: 1.2rem;
+      }
+   }  
+   .fa {
+      color: $color-secondary;
+      transition: all .3s;
+      backface-visibility: hidden;
+
+      &:hover{
+         color: $color-primary;
+         transform: scale(1.2);
+      }
+   }
+}
