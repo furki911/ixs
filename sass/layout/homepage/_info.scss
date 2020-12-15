@@ -4,69 +4,69 @@
    justify-content: center;
    text-align: center;
    padding: 8rem 0;
-   margin-top: 40rem; // becoz position of .navigation is absolute 
+   // margin-top: 40rem; // becoz position of .navigation is absolute 
 
-   @media only screen and (min-height: 500px) {
-      & {
-         margin-top: 48rem; 
-      }
-   }
-   @media only screen and (min-height: 600px) {
-      & {
-         margin-top: 55rem; 
-      }
-   }
-   @media only screen and (min-height: 680px) {
-      & {
-         margin-top: 64rem; 
-      }
-   }
-   @media only screen and (min-height: 768px) {
-      & {
-         margin-top: 65rem; 
-      }
-   }
-   @media only screen and (min-height: 800px) {
-      & {
-         margin-top: 72rem;         
-      }
-   }
-   @media only screen and (min-height: 900px) {
-      & {
-         margin-top: 80rem;  
-      }
-   }
-   @media only screen and (min-height: 1000px) {
-      & {
-         margin-top: 90rem;  
-      }
-   }
-   @media only screen and (min-height: 1100px) {
-      & {
-         margin-top: 100rem;  
-      }
-   }
-   @media only screen and (min-height: 1200px) {
-      & {
-         margin-top: 47rem;  
-      }
-   }
+   // @media only screen and (min-height: 500px) {
+   //    & {
+   //       margin-top: 48rem; 
+   //    }
+   // }
+   // @media only screen and (min-height: 600px) {
+   //    & {
+   //       margin-top: 55rem; 
+   //    }
+   // }
+   // @media only screen and (min-height: 680px) {
+   //    & {
+   //       margin-top: 64rem; 
+   //    }
+   // }
+   // @media only screen and (min-height: 768px) {
+   //    & {
+   //       margin-top: 65rem; 
+   //    }
+   // }
+   // @media only screen and (min-height: 800px) {
+   //    & {
+   //       margin-top: 72rem;         
+   //    }
+   // }
+   // @media only screen and (min-height: 900px) {
+   //    & {
+   //       margin-top: 80rem;  
+   //    }
+   // }
+   // @media only screen and (min-height: 1000px) {
+   //    & {
+   //       margin-top: 90rem;  
+   //    }
+   // }
+   // @media only screen and (min-height: 1100px) {
+   //    & {
+   //       margin-top: 100rem;  
+   //    }
+   // }
+   // @media only screen and (min-height: 1200px) {
+   //    & {
+   //       margin-top: 47rem;  
+   //    }
+   // }
 
-   @media only screen and (max-height: 450px) {
-      & {
-         margin-top: 35rem; 
-      }
-   }
-   @media only screen and (max-height: 360px) {
-      & {
-         margin-top: 30rem; 
-      }
-   }
-   @media only screen and (max-height: 300px) {
-      & {
-         margin-top: 25rem; 
-      }
-   }
+   // @media only screen and (max-height: 450px) {
+   //    & {
+   //       margin-top: 35rem; 
+   //    }
+   // }
+   // @media only screen and (max-height: 360px) {
+   //    & {
+   //       margin-top: 30rem; 
+   //    }
+   // }
+   // @media only screen and (max-height: 300px) {
+   //    & {
+   //       margin-top: 25rem; 
+   //    }
+   // }
 
   
 

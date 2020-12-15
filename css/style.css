@@ -206,7 +206,7 @@ h6 {
   .header__menu-btn {
     display: none;
     position: absolute;
-    top: 18%;
+    top: 4%;
     right: 4%;
     justify-content: center;
     align-items: center;
@@ -252,44 +252,7 @@ h6 {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 8rem 0;
-  margin-top: 40rem; }
-  @media only screen and (min-height: 500px) {
-    .info {
-      margin-top: 48rem; } }
-  @media only screen and (min-height: 600px) {
-    .info {
-      margin-top: 55rem; } }
-  @media only screen and (min-height: 680px) {
-    .info {
-      margin-top: 64rem; } }
-  @media only screen and (min-height: 768px) {
-    .info {
-      margin-top: 65rem; } }
-  @media only screen and (min-height: 800px) {
-    .info {
-      margin-top: 72rem; } }
-  @media only screen and (min-height: 900px) {
-    .info {
-      margin-top: 80rem; } }
-  @media only screen and (min-height: 1000px) {
-    .info {
-      margin-top: 90rem; } }
-  @media only screen and (min-height: 1100px) {
-    .info {
-      margin-top: 100rem; } }
-  @media only screen and (min-height: 1200px) {
-    .info {
-      margin-top: 47rem; } }
-  @media only screen and (max-height: 450px) {
-    .info {
-      margin-top: 35rem; } }
-  @media only screen and (max-height: 360px) {
-    .info {
-      margin-top: 30rem; } }
-  @media only screen and (max-height: 300px) {
-    .info {
-      margin-top: 25rem; } }
+  padding: 8rem 0; }
   .info__sub-heading {
     color: #969696;
     font-weight: 100;
@@ -568,76 +531,173 @@ h6 {
           margin-bottom: 1rem;
           width: 8rem; } }
 
-.navigation {
-  background-color: transparent;
-  position: relative; }
-  .navigation__sub-heading {
-    margin-bottom: 4rem;
-    width: 60%; }
-    @media only screen and (max-width: 40em) {
-      .navigation__sub-heading {
-        width: 100%;
-        margin-bottom: 2rem; } }
-  .navigation__item {
-    width: 100%;
-    height: 85vh;
-    position: absolute;
-    transition: all .5s;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 0 20rem;
-    color: #ffffff;
-    transition: all 0.8s cubic-bezier(0.83, 0.15, 0.47, 0.84); }
-    @media only screen and (max-width: 90em) {
-      .navigation__item {
-        padding: 0 5rem; } }
-    @media only screen and (max-width: 50em) {
-      .navigation__item {
-        padding: 0 2rem; } }
-    @media only screen and (min-height: 1200px) {
-      .navigation__item {
-        height: 40vh; } }
-    .navigation__item::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: linear-gradient(to right top, rgba(110, 30, 166, 0.6) 0%, rgba(110, 30, 166, 0.6) 10%, rgba(38, 105, 144, 0.6));
-      opacity: .5;
-      z-index: -1; }
-    .navigation__item-1 {
-      clip-path: polygon(0 0, 55% 0, 20% 100%, 0% 100%);
-      background: url("../img/navigation/test-1.jpg");
-      background-position: center center;
-      background-size: cover;
-      background-repeat: no-repeat; }
-    .navigation__item-2 {
-      clip-path: polygon(55% 0, 100% 0, 85% 100%, 0 100%);
-      background: url("../img/navigation/foreman-and-businessman-at-solar-energy-station-ZNZJB66.jpg");
-      background-position: center center;
-      background-size: cover;
-      background-repeat: no-repeat; }
-    .navigation__item-3 {
-      clip-path: polygon(100% 0, 100% 0, 100% 100%, 55% 100%);
-      background: url("../img/navigation/test-3.jpg");
-      background-position: center center;
-      background-size: cover;
-      background-repeat: no-repeat; }
-    .navigation__item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; }
-  .navigation:hover .navigation__item {
-    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%); }
-  .navigation .navigation__item:hover {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); }
+.slider {
+  position: relative;
+  height: calc(90vh - calc(73.95px + 42px));
+  width: 100%;
+  overflow: hidden; }
 
-.navigation__item:not(:hover).navigation__item > * {
+.slider__wrap {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  transform: translateX(100vw);
+  top: 0%;
+  left: 0;
+  right: auto;
+  overflow: hidden;
+  transition: transform 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transform-origin: 0% 50%;
+  transition-delay: 450ms;
   opacity: 0; }
+
+.slider__wrap--hacked {
+  opacity: 1; }
+
+.slider__back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: none;
+  transition: filter 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86); }
+
+.slider__inner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0%;
+  background-size: auto 133.3333%;
+  background-position: center;
+  background-repeat: none;
+  transform: scale(0.75);
+  transition: transform 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86), box-shadow 450ms cubic-bezier(0.785, 0.135, 0.15, 0.86), opacity 450ms step-end;
+  opacity: 0;
+  box-shadow: 0 3vh 3vh rgba(0, 0, 0, 0);
+  padding: 15vh;
+  box-sizing: border-box; }
+  @media only screen and (max-width: 32.5em) {
+    .slider__inner {
+      padding: 3rem; } }
+  @media only screen and (max-width: 25em) {
+    .slider__inner {
+      padding: 1.6rem .6rem; } }
+
+.slider__content {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center; }
+
+.slider__content .fa {
+  color: #ffffff;
+  font-size: 6rem; }
+
+.slider__slide {
+  position: absolute;
+  left: 0;
+  height: calc(90vh - calc(73.95px + 42px));
+  width: 100vw;
+  transition: transform 600ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition-delay: 600ms;
+  pointer-events: none;
+  z-index: 0; }
+
+.slider__slide--active {
+  transform: translatex(0%);
+  z-index: 2; }
+
+.slider__slide--active .slider__wrap {
+  transform: translateX(0);
+  transform-origin: 100% 50%;
+  opacity: 1;
+  animation: none; }
+
+.slider__slide--active .slider__back {
+  filter: blur(1.5vh);
+  transition-delay: 900ms !important; }
+
+.slider__slide--active .slider__inner {
+  transform: scale(1);
+  box-shadow: 0 1vh 6vh rgba(0, 0, 0, 0.2);
+  pointer-events: auto;
+  opacity: 1;
+  transition: transform 900ms cubic-bezier(0.785, 0.135, 0.15, 0.86), box-shadow 900ms cubic-bezier(0.785, 0.135, 0.15, 0.86), opacity 1ms step-end;
+  transition-delay: 900ms; }
+
+.slider__slide--active .slider__content {
+  opacity: 1;
+  transition-delay: 1350ms; }
+
+.slider__slide:not(.slider__slide--active) .slider__wrap {
+  animation-name: hack;
+  animation-duration: 900ms;
+  animation-delay: 450ms;
+  animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86); }
+
+@keyframes hack {
+  0% {
+    transform: translateX(0);
+    opacity: 1; }
+  50% {
+    transform: translateX(-100vw);
+    opacity: 1; }
+  51% {
+    transform: translateX(-100vw);
+    opacity: 0; }
+  52% {
+    transform: translateX(100vw);
+    opacity: 0; }
+  100% {
+    transform: translateX(100vw);
+    opacity: 1; } }
+
+.slider__slide:nth-child(1) .slider__back, .slider__slide:nth-child(1) .slider__inner {
+  background-image: url("../img/navigation/test-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.slider__slide:nth-child(2) .slider__back, .slider__slide:nth-child(2) .slider__inner {
+  background: url("../img/navigation/foreman-and-businessman-at-solar-energy-station-ZNZJB66.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.slider__slide:nth-child(3) .slider__back, .slider__slide:nth-child(3) .slider__inner {
+  background: url("../img/navigation/test-3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.navigation__content {
+  color: #ffffff;
+  padding: 0 1rem; }
+  @media only screen and (max-width: 50em) {
+    .navigation__content a {
+      font-size: 1rem; } }
+
+@media only screen and (max-width: 50em) {
+  .navigation__heading {
+    font-size: 3rem; } }
+
+@media only screen and (max-width: 40em) {
+  .navigation__heading {
+    font-size: 2.6rem; } }
+
+@media only screen and (max-width: 25em) {
+  .navigation__heading {
+    line-height: 1; } }
+
+.navigation__sub-heading {
+  margin: 1.4rem 0; }
+  @media only screen and (max-width: 50em) {
+    .navigation__sub-heading {
+      margin: 1rem 0;
+      font-size: 2rem; } }
+  @media only screen and (max-width: 40em) {
+    .navigation__sub-heading {
+      margin: .8rem 0;
+      font-size: 1.6rem; } }
 
 .our-skills {
   display: flex; }
@@ -960,6 +1020,77 @@ h6 {
   .filter-item li.active,
   .filter-item li {
     width: 33.33%; } }
+
+.box {
+  width: 350px;
+  background: #fff;
+  box-sizing: 0 0 5px #bababa;
+  position: relative;
+  margin: 10px auto;
+  font-size: 1.4rem; }
+
+.box img {
+  display: block;
+  width: 100%;
+  height: 25rem;
+  object-fit: cover; }
+
+.box .box-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.box .box-content:before,
+.box .box-content:after {
+  content: "";
+  width: 95%;
+  height: 47%;
+  background: #365e99;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: all 0.5s;
+  opacity: 0; }
+
+.box .box-content:before {
+  top: -10%; }
+
+.box .box-content:after {
+  bottom: -10%; }
+
+.box:hover .box-content:before {
+  top: 3%;
+  opacity: 0.8; }
+
+.box:hover .box-content:after {
+  bottom: 3%;
+  opacity: 0.8; }
+
+.box .content {
+  width: 100%;
+  height: 45px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+  text-align: center;
+  opacity: 0;
+  transition: all .3s ease-in-out;
+  transition-delay: .2s;
+  color: #ffffff;
+  font-weight: 100; }
+
+.box:hover .content {
+  opacity: 1; }
+
+.box:hover .content .post {
+  font-size: 1.8rem; }
 
 .social-media {
   display: flex;

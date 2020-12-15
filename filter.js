@@ -49,3 +49,84 @@ for(let i = 0; i < sorttBtn.length; i++){
         }
     });
 }
+
+
+
+// Changing About Sections
+const aboutHeading = document.querySelector('.about__heading');
+const aboutParagraph = document.querySelector('.about__paragraph');
+
+const WhoWeAre = document.getElementById('who-we-are');
+const mission = document.getElementById('mission');
+const vision = document.getElementById('vision');
+const values = document.getElementById('values');
+
+WhoWeAre.addEventListener('click', function() {
+    aboutHeading.textContent = 'Who We Are';
+    aboutParagraph.textContent = 'We are Infinity Access Technologies played a vital role in connecting automotive supply chain, adopting best of the technologies to provide innovative solutions and focus on bringing business value through digital technology.';
+});
+
+mission.addEventListener('click', function() {
+    aboutHeading.textContent = 'Our Mission';
+    aboutParagraph.textContent = "Enabling customers to accomplish their ambitions and realize their vision. By investing in our people, partners and technology we add value to those we serve with a focus on readiness, responsiveness and resolution.";
+});
+
+vision.addEventListener('click', function() {
+    aboutHeading.textContent = 'Our Vision';
+    aboutParagraph.textContent = "To enable people throughout the world to realize their full potential. Build customer trust and value by providing a quality and futuristic services the first time, every time.";
+});
+
+values.addEventListener('click', function() {
+    aboutHeading.textContent = 'Our Values';
+    aboutParagraph.textContent = "Infinity Access has always been at the vanguard of the IT movement in India with the sole objective to empower people with technological advancements. We value Honesty and integrity, which generate long-term client loyalty and a sincere focus on providing exceptional customer service.";
+});
+
+
+$(document).ready(function(){
+    for (var i=1; i <= $('.slider__slide').length; i++){
+        $('.slider__indicators').append('<div class="slider__indicator" data-slide="'+i+'"></div>')
+    }
+    setTimeout(function(){
+        $('.slider__wrap').addClass('slider__wrap--hacked');
+    }, 1000);
+})
+
+function goToSlide(number){
+    $('.slider__slide').removeClass('slider__slide--active');
+    $('.slider__slide[data-slide='+number+']').addClass('slider__slide--active');
+}
+
+function nextSlide() {
+    var currentSlide = Number($('.slider__slide--active').data('slide'));
+    var totalSlides = $('.slider__slide').length;
+    currentSlide++;
+    if (currentSlide > totalSlides){
+        currentSlide = 1;
+    }
+    goToSlide(currentSlide);
+}
+
+function prevSlide() {
+    var currentSlide = Number($('.slider__slide--active').data('slide'));
+    var totalSlides = $('.slider__slide').length;
+    currentSlide--;
+    if (currentSlide < 1){
+        currentSlide = totalSlides;
+    }
+    goToSlide(currentSlide);
+}
+
+// Infinte Loop for Slider
+(function(delay, callback) {
+    var loop = function() {
+        callback();
+        setTimeout(loop, delay);
+    };     
+    loop();
+})(10000, function() {
+    nextSlide();
+});
+
+$('.slider__next, .go-to-next').on('click', function(){
+    nextSlide();
+});
