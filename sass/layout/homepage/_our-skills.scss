@@ -11,8 +11,14 @@
             background-color: $color-primary;
             @media only screen and (max-width: $bp-small) {
                width: 20%;
+               margin-bottom: 2rem;
             }
          }
+      }
+
+      
+      @media only screen and (max-width: $bp-small) {
+         padding: 2rem 0;
       }
    }
 
@@ -25,10 +31,6 @@
 
    @media only screen and (max-width: $bp-medium) {
       padding: 4rem 2rem;
-   }
-
-   @media only screen and (max-width: $bp-small) {
-      padding: 4rem 1rem;
    }
 
    &__sub-heading {

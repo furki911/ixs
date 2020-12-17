@@ -57,6 +57,7 @@ values.addEventListener('click', function() {
 });
 
 
+// Code for Navigation Image Slider
 $(document).ready(function(){
     for (var i=1; i <= $('.slider__slide').length; i++){
         $('.slider__indicators').append('<div class="slider__indicator" data-slide="'+i+'"></div>')
@@ -106,7 +107,7 @@ $('.slider__next, .go-to-next').on('click', function(){
     nextSlide();
 });
 
-// New Arrivals
+// Filter Menu and Item
 
 let sortBtn = document.querySelector('.filter-menu').children;
 let sortItem = document.querySelector('.filter-item').children;
@@ -134,7 +135,7 @@ for(let i = 0; i < sortBtn.length; i++){
     });
 }
 
-
+// Code for New Arrivals Section
 const sortButton =  document.querySelector('.filter-item__menu').children;
 const sortChildren = document.querySelector('.our-skills__content').children;
 
@@ -146,7 +147,6 @@ for(let i = 0; i < sortButton.length; i++) {
         this.classList.add('current');
 
         let targetClass = this.textContent;
-        console.log(targetClass);
 
         for(let k = 0; k < sortChildren.length; k++) {
             sortChildren[k].classList.remove('disp-flex');

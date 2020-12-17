@@ -206,7 +206,7 @@ h6 {
   .header__menu-btn {
     display: none;
     position: absolute;
-    top: 4%;
+    top: 2.2%;
     right: 4%;
     justify-content: center;
     align-items: center;
@@ -237,7 +237,7 @@ h6 {
     .header .menu-btn__hamburger::after {
       transform: translateY(0.8rem); }
   .header__menu-btn.open {
-    top: 3.6%;
+    top: 1.8%;
     transition: none; }
     .header__menu-btn.open .menu-btn__hamburger {
       transform: translateX(-5rem);
@@ -712,7 +712,11 @@ h6 {
       background-color: #365e99; }
       @media only screen and (max-width: 25em) {
         .our-skills-outer > h4::after {
-          width: 20%; } }
+          width: 20%;
+          margin-bottom: 2rem; } }
+    @media only screen and (max-width: 25em) {
+      .our-skills-outer {
+        padding: 2rem 0; } }
   @media only screen and (max-width: 40em) {
     .our-skills {
       flex-direction: column;
@@ -720,9 +724,6 @@ h6 {
   @media only screen and (max-width: 32.5em) {
     .our-skills {
       padding: 4rem 2rem; } }
-  @media only screen and (max-width: 25em) {
-    .our-skills {
-      padding: 4rem 1rem; } }
   .our-skills__sub-heading {
     font-style: italic; }
   .our-skills__heading {
@@ -971,9 +972,14 @@ h6 {
   font-weight: 500;
   cursor: pointer;
   transition: all .3s; }
+  @media only screen and (max-width: 40em) {
+    .filter-menu li {
+      padding: 1rem 1.50rem;
+      font-size: 1.2rem; } }
   @media only screen and (max-width: 32.5em) {
     .filter-menu li {
-      padding: 1rem 1.50rem; } }
+      padding: 1rem;
+      font-size: 1.2rem; } }
   @media only screen and (max-width: 25em) {
     .filter-menu li {
       padding: 1rem .8rem;
@@ -1037,6 +1043,9 @@ h6 {
   width: 100%;
   height: 25rem;
   object-fit: cover; }
+  @media only screen and (max-width: 25em) {
+    .box img {
+      height: 18rem; } }
 
 .box .box-content {
   width: 100%;
@@ -1087,13 +1096,22 @@ h6 {
   transition: all .3s ease-in-out;
   transition-delay: .2s;
   color: #ffffff;
-  font-weight: 100; }
+  font-weight: 100;
+  font-size: 1.8rem; }
+  @media only screen and (max-width: 25em) {
+    .box .content {
+      width: 80%;
+      height: 50%;
+      font-size: 1.4rem; } }
 
 .box:hover .content {
   opacity: 1; }
 
 .box:hover .content .post {
   font-size: 1.8rem; }
+  @media only screen and (max-width: 25em) {
+    .box:hover .content .post {
+      font-size: 1.4rem; } }
 
 .social-media {
   display: flex;

@@ -106,7 +106,7 @@
    &__menu-btn {
       display: none;
       position: absolute;
-      top: 4%;
+      top: 2.2%;
       right: 4%;
       justify-content: center;
       align-items: center;
@@ -148,7 +148,7 @@
 
    &__menu-btn.open {
 
-      top: 3.6%;
+      top: 1.8%;
       transition: none;
 
       .menu-btn__hamburger {
