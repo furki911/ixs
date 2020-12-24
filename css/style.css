@@ -1140,3 +1140,42 @@ h1, h2, h3, h4, h5, h6, p, span {
     .social-media .fa:hover {
       color: #365e99;
       transform: scale(1.2); }
+
+.about-us {
+  padding: 6rem 0; }
+  .about-us__heading {
+    text-align: center; }
+    .about-us__heading::after {
+      content: '';
+      display: block;
+      margin: 1.5rem auto;
+      width: 7%;
+      height: 3px;
+      background-color: #365e99; }
+  .about-us__description {
+    display: flex;
+    margin: 6rem 0; }
+    .about-us__description--odd {
+      flex-direction: row-reverse; }
+  .about-us__text {
+    flex-basis: 60%;
+    font-size: 1.6rem;
+    font-weight: 300; }
+  .about-us__description .about-us__text {
+    padding-right: 6rem; }
+  .about-us__description--odd .about-us__text {
+    padding-right: 0;
+    padding-left: 6rem; }
+  .about-us__img {
+    flex-basis: 40%; }
+    .about-us__img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .about-us:nth-of-type(even) {
+    background: #24487d;
+    color: #d7e0ee; }
+    .about-us:nth-of-type(even) .heading {
+      color: #ffffff; }
+      .about-us:nth-of-type(even) .heading::after {
+        background: #ffffff; }
