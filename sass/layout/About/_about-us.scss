@@ -1,5 +1,12 @@
 .about-us {
    padding: 6rem 0;
+   @media only screen and (max-width: $bp-mega) {
+      padding: 4rem 0;
+   }
+
+   @media only screen and (max-width: $bp-medium) {
+      padding: 2rem 0;
+   }
 
    &__heading {
       text-align: center;
@@ -10,14 +17,19 @@
          width: 7%;
          height: 3px;
          background-color: $color-primary;
-         @media only screen and (max-width: $bp-small) {
-            // width: 20%;
+
+         @media only screen and (max-width: $bp-medium) {
+            width: 10%;
+            margin: 0 auto;
+            margin-top: 1.5rem;
          }
       }
    }
 
    &__description {
       display: flex;
+      align-items: flex-start;
+      justify-content: center;
       margin: 6rem 0;
 
       &--odd {
@@ -29,23 +41,54 @@
       flex-basis: 60%;
       font-size: 1.6rem;
       font-weight: 300;
+
+      @media only screen and (max-width: $bp-mega) {
+         font-size: 1.4rem;
+      }
+
+      @media only screen and (max-width: $bp-large) {
+         flex-basis: 70%;
+      }
+
+      @media only screen and (max-width: $bp-big) {
+         flex-basis: 80%;
+      }
+
+      @media only screen and (max-width: $bp-small) {
+         flex-basis: 90%;
+      }
+
    }
 
    &__description &__text {
       padding-right: 6rem;
+      @media only screen and (max-width: $bp-mega) {
+         padding-right: 2rem;
+      }
    }
    
    &__description--odd &__text {
       padding-right: 0;
       padding-left: 6rem;
+      @media only screen and (max-width: $bp-mega) {
+         padding-left: 2rem;
+      }
    }
 
    &__img {
       flex-basis: 40%;
+      overflow: hidden;
+      @media only screen and (max-width: $bp-large) {
+         flex-basis: 30%;
+      }
+      @media only screen and (max-width: $bp-big) {
+         display: none;
+      }
       img {
          width: 100%;
          height: 100%;
          object-fit: cover;
+         transform: scale(1.4);
       }
    }
 
