@@ -10,6 +10,7 @@
    box-shadow: 0 .5rem 2rem rgba(#fff,0.2);
    margin: .5rem;
    cursor: pointer;
+   color: $color-white;
 
    &[class^='btn'], a {
       display: inline-block;
@@ -34,10 +35,9 @@
 
    &__primary {
       background-color: transparent;
-      color: $color-white;
    }
 
    &__secondary {
-
+      background-image: linear-gradient(to right top, rgba(#6e1ea6, 0.9) 0%, rgba(#6e1ea6, 0.9) 10%, rgba(#266990, 0.9));
    }
 }
