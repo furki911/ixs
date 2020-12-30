@@ -92,13 +92,13 @@
       }
 
       input, textarea {
+         font-family: inherit;
+         transition: all .3s;
          &:active,
          &:focus {
             outline: none;
             font-family: inherit;
-         }
-         &:placeholder-shown {
-            font-family: inherit;
+            border-bottom: 3px solid $color-primary;
          }
       }
    }

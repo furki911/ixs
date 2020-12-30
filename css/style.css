@@ -1288,11 +1288,13 @@ h1, h2, h3, h4, h5, h6, p, span {
       width: 99.5%;
       height: 16rem;
       resize: none; }
-    .contact .input__container input:active, .contact .input__container input:focus, .contact .input__container textarea:active, .contact .input__container textarea:focus {
-      outline: none;
-      font-family: inherit; }
-    .contact .input__container input:placeholder-shown, .contact .input__container textarea:placeholder-shown {
-      font-family: inherit; }
+    .contact .input__container input, .contact .input__container textarea {
+      font-family: inherit;
+      transition: all .3s; }
+      .contact .input__container input:active, .contact .input__container input:focus, .contact .input__container textarea:active, .contact .input__container textarea:focus {
+        outline: none;
+        font-family: inherit;
+        border-bottom: 3px solid #365e99; }
   .contact .btn {
     color: #ffffff;
     backface-visibility: hidden;
