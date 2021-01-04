@@ -3,18 +3,114 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
+      <title>Infiny Access Technologies | Home</title>
+      <meta name="description" content="Infinity Access Technologies (IAT) based in Bangalore & Srinagar-India, has been successfully delivering IT services. Our expert team of Internet Marketing has created an arena in marketing products, brands, and services to increase sales and marketing.">
+      <meta name="keywords" content="IXS, ixs, infinity, Infinity, access, Access, technologies, Technologies, InfinyAccess, infinityAccessTechnologies, Infinity Acces Technologies, Tech comany in srinagar, system solutions, network solutions, solutions, artificial intelligence, web development, srinagar, kashmir, saima complex, Bishember nagar, Karnataka, Bangalore, Tech, cloud solutions, solar solutions, hydro power, datacenter services, robotics, ai training, ai infrastructure, ai services, machine learning">
+      <meta name="author" content="Infinity Access Technologies">
       <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+      <link rel="icon" type="img/png" href="img/favicon.png">
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+     
    </head>
    <body>
-      <div class="box">
-         <img src="img/laptop.png" alt="">
-         <div class="box-content">
-            <div class="content">
-               <h3 class="title">John Doe</h3>
-               <span class="post">Web Designer</span>
+      <div class="modal__container">
+         <div class="modal">
+            <span class="modal__close-btn">&#10005</span>
+            <h3 class="modal__heading">Kashmir University WiFi</h3>
+            <div class="modal__content">
+               <div class="modal__description">
+                  Lorem ipsum dolor, sit amet consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat natus, aperiam optio voluptate distinctio atque veritatis in cupiditate aspernatur magnam saepe officia ad repellat perferendis facere quisquam dolorum ex temporibus animi ipsam? Culpa hic soluta, earum doloribus quos facere sed! adipisicing elit. Velit autem, officia necessitatibus tempore exercitationem architecto laboriosam commodi soluta, nulla, id distinctio nisi in ipsum. Incidunt quidem maxime assumenda porro vero, eveniet cupiditate alias nobis quibusdam ad, quis esse magnam consectetur.
+               </div>
+               <div class="modal__image">
+                  <div id="slider">
+                     <div class="slide slide1">
+                       <div class="slide-content">
+                        <img src="img/images/female1.jpg" alt="img">
+                       </div>
+                     </div>
+                     <div class="slide slide2">
+                       <div class="slide-content">
+                        <img src="img/images/female2.jpg" alt="img">
+                       </div>
+                     </div>
+                     <div class="slide slide3">
+                       <div class="slide-content">
+                        <img src="img/images/female5.jpg" alt="img">
+                       </div>
+                     </div>
+                  </div>
+                  <div class="modal__btn-container">
+                     <span class="modal__btn left-btn"><svg class="fa" width="30px" height="30px" viewBox="0 0 50 80" xml:space="preserve">
+                        <polyline fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="
+                       45.63,75.8 0.375,38.087 45.63,0.375 "/>
+                      </svg>  </i></span>
+                     <span class="modal__btn right-btn">
+                        <svg class="fa" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px" viewBox="0 0 50 80" xml:space="preserve">
+                           <polyline fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="
+                          0.375,0.375 45.63,38.087 0.375,75.8 "/></svg>
+                     </span>
+                  </div>
+               </div>
             </div>
          </div>
       </div>
    </body>
+
+   <script>
+
+      let sliderImages = document.querySelectorAll(".slide"),
+      arrowLeft = document.querySelector(".left-btn"),
+      arrowRight = document.querySelector(".right-btn"),
+      current = 0;
+
+      // Clear all images
+      function reset() {
+      for (let i = 0; i < sliderImages.length; i++) {
+         sliderImages[i].style.display = "none";
+      }
+      }
+
+      // Init slider
+      function startSlide() {
+      reset();
+      sliderImages[0].style.display = "block";
+      }
+
+      // Show prev
+      function slideLeft() {
+      reset();
+      sliderImages[current - 1].style.display = "block";
+      current--;
+      }
+
+      // Show next
+      function slideRight() {
+      reset();
+      sliderImages[current + 1].style.display = "block";
+      current++;
+      }
+
+      // Left arrow click
+      arrowLeft.addEventListener("click", function() {
+      if (current === 0) {
+         current = sliderImages.length;
+      }
+      slideLeft();
+      });
+
+      // Right arrow click
+      arrowRight.addEventListener("click", function() {
+      if (current === sliderImages.length - 1) {
+         current = -1;
+      }
+      slideRight();
+      });
+
+      startSlide();
+
+
+   </script>
 </html>
