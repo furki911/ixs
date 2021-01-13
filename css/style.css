@@ -476,16 +476,16 @@ h1, h2, h3, h4, h5, h6, p, span {
   @media only screen and (max-width: 65em) {
     .about {
       background: #24487d;
-      padding: 4rem 8rem 0; } }
+      padding: 4rem 8rem 4rem; } }
   @media only screen and (max-width: 50em) {
     .about {
-      padding: 4rem 2rem;
-      padding-bottom: 0; } }
+      padding: 4rem 2rem; } }
   @media only screen and (max-width: 25em) {
     .about {
       padding: 2rem; } }
   .about__img {
-    margin-left: 8rem; }
+    margin-left: 8rem;
+    flex-basis: 30%; }
     @media only screen and (max-width: 90em) {
       .about__img {
         margin-left: 4rem; } }
@@ -497,29 +497,31 @@ h1, h2, h3, h4, h5, h6, p, span {
   .about__info {
     display: flex;
     justify-content: center;
-    color: #ffffff; }
+    color: #ffffff;
+    flex: 1; }
     @media only screen and (max-width: 25em) {
       .about__info {
         flex-direction: column; } }
   .about__links {
     list-style: none;
-    padding: 1rem 2rem 0rem;
-    flex-basis: 40%; }
+    padding: 4rem 2rem 0rem;
+    flex-basis: 20%; }
     @media only screen and (max-width: 90em) {
       .about__links {
-        flex-basis: 60%;
+        flex-basis: 25%;
         padding: 0;
         margin-left: 1rem; } }
-    @media only screen and (max-width: 65em) {
-      .about__links {
-        flex-basis: 60%; } }
-    @media only screen and (max-width: 40em) {
-      .about__links {
-        flex-basis: 80%; } }
-    @media only screen and (max-width: 40em) {
+    @media only screen and (max-width: 50em) {
       .about__links {
         order: 1;
-        flex-basis: 100%; } }
+        flex-basis: 25%;
+        align-self: center; } }
+    @media only screen and (max-width: 32.5em) {
+      .about__links {
+        flex-basis: 30%; } }
+    @media only screen and (max-width: 25em) {
+      .about__links {
+        align-self: flex-start; } }
     .about__links li {
       border-right: .5rem solid transparent;
       transition: all .2s; }
@@ -543,7 +545,8 @@ h1, h2, h3, h4, h5, h6, p, span {
     .about__link-item:focus {
       outline: none; }
   .about__description {
-    padding: 0 4rem; }
+    padding: 0 4rem;
+    flex: 1; }
     @media only screen and (max-width: 90em) {
       .about__description {
         flex-basis: min-content;
@@ -551,12 +554,17 @@ h1, h2, h3, h4, h5, h6, p, span {
         margin-left: 2rem; } }
     @media only screen and (max-width: 65em) {
       .about__description {
-        margin-left: 4rem; } }
+        margin-right: 4rem; } }
     @media only screen and (max-width: 32.5em) {
       .about__description {
-        margin-left: 0; } }
+        margin-left: 0;
+        margin-right: 2rem; } }
     .about__description .btn {
       margin: 3rem 0; }
+      @media only screen and (max-width: 25em) {
+        .about__description .btn {
+          margin: 0;
+          margin-bottom: 2rem; } }
   .about__sub-heading {
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -586,6 +594,9 @@ h1, h2, h3, h4, h5, h6, p, span {
     @media only screen and (max-width: 65em) {
       .about__paragraph {
         margin-top: 1rem; } }
+    @media only screen and (max-width: 25em) {
+      .about__paragraph {
+        margin-bottom: 2rem; } }
 
 .get-in-touch {
   background: #4d3699; }

@@ -35,25 +35,30 @@ const WhoWeAre = document.getElementById('who-we-are');
 const mission = document.getElementById('mission');
 const vision = document.getElementById('vision');
 const values = document.getElementById('values');
+const aboutBtn = document.getElementById('about-btn');
 
 WhoWeAre.addEventListener('click', function() {
     aboutHeading.textContent = 'Who We Are';
     aboutParagraph.textContent = 'We are Infinity Access Technologies played a vital role in connecting automotive supply chain, adopting best of the technologies to provide innovative solutions and focus on bringing business value through digital technology.';
+    aboutBtn.style.display = "inline-block";
 });
 
 mission.addEventListener('click', function() {
     aboutHeading.textContent = 'Our Mission';
     aboutParagraph.textContent = "Enabling customers to accomplish their ambitions and realize their vision. By investing in our people, partners and technology we add value to those we serve with a focus on readiness, responsiveness and resolution.";
+    aboutBtn.style.display = "none";    
 });
 
 vision.addEventListener('click', function() {
     aboutHeading.textContent = 'Our Vision';
     aboutParagraph.textContent = "To enable people throughout the world to realize their full potential. Build customer trust and value by providing a quality and futuristic services the first time, every time.";
+    aboutBtn.style.display = "none";
 });
 
 values.addEventListener('click', function() {
     aboutHeading.textContent = 'Our Values';
     aboutParagraph.textContent = "Infinity Access has always been at the vanguard of the IT movement in India with the sole objective to empower people with technological advancements. We value Honesty and integrity, which generate long-term client loyalty and a sincere focus on providing exceptional customer service.";
+    aboutBtn.style.display = "none";
 });
 
 
