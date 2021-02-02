@@ -9,6 +9,7 @@
 @import "components/modal";
 
 @import "pages/homepage";
+@import "pages/services";
 
 @import "layout/homepage/header";
 @import "layout/homepage/info";
@@ -25,3 +26,20 @@
 @import "layout/About/about-us";
 
 @import "layout/contact/contact";
+
+.body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 6rem 0;
+
+   .btn {
+      color: $color-white;
+   }
+}
+
+.form__group {
+   input,select {
+      padding: .75rem 1rem;
+   }
+}
